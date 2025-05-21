@@ -9,7 +9,7 @@ Make sure you have the following installed:
 ### Installation
 
 1. git clone https://github.com/NjMjor/webshop
-2. cd my-app
+2. cd .\webshop\my-app\
 3. npm i
 
 ### Run

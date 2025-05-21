@@ -1,0 +1,15 @@
+.cart-total {
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .cart-total {
+        max-width: 300px;
+    }
+}

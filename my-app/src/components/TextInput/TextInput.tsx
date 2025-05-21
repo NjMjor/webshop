@@ -1,13 +1,16 @@
 import "./TextInput.css";
-import type { ChangeEvent } from "react";
+import type { ChangeEvent, RefObject } from "react";
 
 interface TextInputProps {
-  name: string;
-  label: string;
-  value: string;
-  onChange: (event: ChangeEvent<HTMLInputElement>) => void;
+  name?: string;
+  label?: string;
+  value?: string;
+  onChange?: (event: ChangeEvent<HTMLInputElement>) => void;
   type?: string;
   error?: string;
+  placeHolder?: string;
+  disableError?: boolean;
+  ref?: RefObject<HTMLInputElement | null>;
 }
 
 export default function TextInput({
@@ -18,6 +21,8 @@ export default function TextInput({
   type,
   error,
   ref,
+  disableError,
+  placeHolder,
 }: TextInputProps) {
   return (
     <div className={"text-input-wrapper"}>
@@ -29,8 +34,11 @@ export default function TextInput({
         id={name}
         name={name}
         onChange={onChange}
+        placeholder={placeHolder}
       />
-      <div style={{ color: "red", minHeight: "2rem" }}>{error}</div>
+      {!disableError && (
+        <div style={{ color: "red", minHeight: "2rem" }}>{error}</div>
+      )}
     </div>
   );
 }

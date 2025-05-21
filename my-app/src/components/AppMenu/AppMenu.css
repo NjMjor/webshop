@@ -1,0 +1,6 @@
+.app-menu {
+    display: flex;
+    justify-content: space-between;
+    height: 20px;
+    padding: 10px 0;
+}

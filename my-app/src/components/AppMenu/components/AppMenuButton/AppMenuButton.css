@@ -1,0 +1,32 @@
+.app-menu-button {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    height: 100%;
+}
+
+.app-menu-button-wrapper {
+    position: relative;
+    height: 100%;
+}
+
+.app-menu-button:hover {
+    opacity: 0.5;
+}
+
+.app-menu-button-badge {
+    z-index: 1;
+    left: 10%;
+    top: -5%;
+    position: absolute;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+    display: inline-block;
+}

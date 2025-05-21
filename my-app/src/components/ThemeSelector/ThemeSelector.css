@@ -1,0 +1,11 @@
+.theme-selector-content {
+    min-width: 100px;
+}
+
+.theme-selector-content-item {
+    cursor: pointer;
+}
+
+.theme-selector-content-item:hover {
+    opacity: 0.5;
+}

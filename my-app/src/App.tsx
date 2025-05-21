@@ -10,6 +10,7 @@ import AppMenu from "./components/AppMenu/AppMenu.tsx";
 import CartPage from "./pages/CartPage/CartPage.tsx";
 import { useContext } from "react";
 import { ThemeContext } from "./AppWrap.tsx";
+import PageNotFound from "./pages/PageNotFound/PageNotFound.tsx";
 
 function App() {
   const theme = useContext(ThemeContext);
@@ -47,6 +48,7 @@ function App() {
         <Route path={"/products"} element={<ProductsPage />} />
         <Route path={"/products/:id"} element={<SingleProductPage />} />
         <Route path={"/cart"} element={<CartPage />} />
+        <Route path={"*"} element={<PageNotFound />} />
       </Routes>
     </div>
   );

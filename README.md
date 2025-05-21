@@ -16,6 +16,5 @@ Make sure you have the following installed:
 4. npm run dev
 
 ### Preview
-to preview
 4. npm run build 
 5. npm run preview 
